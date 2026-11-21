@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentencemix"
+version = "0.1.0"
+description = "句子重排练习纸：打乱词序生成可打印 A4 题目与答案页"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "sentence", "word-order", "worksheet", "printable", "chinese"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+sentencemix = "sentencemix.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/sentencemix"
+Source = "https://github.com/eastyou/sentencemix"
+
+[tool.setuptools]
+packages = ["sentencemix"]

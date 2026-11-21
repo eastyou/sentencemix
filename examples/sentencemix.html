@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>句子重排练习</title>
+<style>
+@page { size: A4 portrait; margin: 14mm 13mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: #1b2430;
+  font-size: 11pt;
+  line-height: 1.55;
+}
+h1 { font-size: 20pt; margin: 0 0 2mm; }
+.sub { color: #6b7280; font-size: 10pt; margin: 0 0 6mm; }
+ol.items { margin: 0; padding-left: 7mm; }
+li.item { margin-bottom: 7mm; page-break-inside: avoid; }
+.chips { display: flex; flex-wrap: wrap; gap: 1.6mm; margin-bottom: 2.5mm; }
+.chip {
+  display: inline-block;
+  padding: 0.7mm 2.4mm;
+  border: 0.6pt solid #94a3b8;
+  border-radius: 1.4mm;
+  background: #f8fafc;
+  font-size: 10.5pt;
+}
+.lines .line {
+  border-bottom: 0.6pt solid #c7cdd4;
+  height: 8mm;
+}
+.answers { page-break-before: always; }
+.answers h2 { font-size: 15pt; margin: 0 0 4mm; }
+.answers ol { padding-left: 8mm; }
+.answers li { margin-bottom: 2.4mm; page-break-inside: avoid; }
+.note { color: #6b7280; font-size: 9.5pt; }
+@media print { li.item, .answers li { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<h1>句子重排练习</h1>
+<p class="sub">姓名：__________　班级：__________　日期：__________</p>
+<p>把下面的词卡重新排列，组成一个通顺的句子，写在横线上。</p>
+<ol class="items"><li class="item"><div class="chips"><span class="chip">里</span><span class="chip">的</span><span class="chip">们</span><span class="chip">腾</span><span class="chip">实</span><span class="chip">水</span><span class="chip">察</span><span class="chip">我</span><span class="chip">沸</span><span class="chip">在</span><span class="chip">验</span><span class="chip">室</span><span class="chip">了</span><span class="chip">观</span></div><div class="lines"><div class="line"></div></div></li><li class="item"><div class="chips"><span class="chip">齐</span><span class="chip">整</span><span class="chip">上</span><span class="chip">课</span><span class="chip">的</span><span class="chip">桌</span><span class="chip">把</span><span class="chip">整</span><span class="chip">本</span><span class="chip">书</span><span class="chip">请</span><span class="chip">理</span></div><div class="lines"><div class="line"></div></div></li><li class="item"><div class="chips"><span class="chip">公</span><span class="chip">非</span><span class="chip">今</span><span class="chip">天</span><span class="chip">去</span><span class="chip">气</span><span class="chip">常</span><span class="chip">的</span><span class="chip">天</span><span class="chip">散</span><span class="chip">园</span><span class="chip">步</span><span class="chip">合</span><span class="chip">适</span></div><div class="lines"><div class="line"></div></div></li><li class="item"><div class="chips"><span class="chip">bedtime</span><span class="chip">like</span><span class="chip">I</span><span class="chip">before</span><span class="chip">books</span><span class="chip">to</span><span class="chip">read</span></div><div class="lines"><div class="line"></div></div></li><li class="item"><div class="chips"><span class="chip">fox</span><span class="chip">The</span><span class="chip">brown</span><span class="chip">lazy</span><span class="chip">quick</span><span class="chip">the</span><span class="chip">over</span><span class="chip">dog</span><span class="chip">jumps</span></div><div class="lines"><div class="line"></div></div></li><li class="item"><div class="chips"><span class="chip">展</span><span class="chip">览</span><span class="chip">博</span><span class="chip">周</span><span class="chip">去</span><span class="chip">我</span><span class="chip">起</span><span class="chip">一</span><span class="chip">们</span><span class="chip">物</span><span class="chip">参</span><span class="chip">观</span><span class="chip">馆</span><span class="chip">末</span></div><div class="lines"><div class="line"></div></div></li></ol>
+<section class="answers">
+<h2>参考答案</h2>
+<ol><li>我们在实验室里观察了水的沸腾。</li><li>请把课桌上的书本整理整齐。</li><li>今天的天气非常适合去公园散步。</li><li>I like to read books before bedtime.</li><li>The quick brown fox jumps over the lazy dog.</li><li>周末我们一起去博物馆参观展览。</li></ol>
+</section>
+</body>
+</html>
